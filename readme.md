@@ -6,4 +6,3 @@
 * ce a realizat Formula 1 >(Significant changes)
 * echipele actuale (2026) >(Teams)
 * fosti campioni mondiali > (Champions)
-
