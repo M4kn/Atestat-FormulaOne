@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Racing+Sans+One&display=swap');
+
+/* Hero Section */
+
+video {
+    z-index: -5;
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    bottom: 30vh;
+    filter: brightness(1);
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+.title {
+    color: white;
+    font-family: 'Racing Sans One', sans-serif;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-text {
+    position: absolute;
+    font-size: min(7vh, 4vw);
+    font-weight: bold;
+}
+
+.f_logo {
+    height: min(5vw, 10vh);
+    margin-right: -25%;
+}
+
+.name {
+    color: #fff;
+    align-self: flex-end;
+    margin-bottom: -1.7vh;
+}
+
+.fade-out {
+    animation: fadeOut 4s ease-in-out forwards;
+}
+
+.fade-in {
+    display: flex;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 4s forwards,
+        moveDown 3s ease-in-out 6.5s forwards,
+        moveUp 2s ease-in-out 10.5s forwards;
+}
+
+
+
+/* Animations */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(30vh);
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(30vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
