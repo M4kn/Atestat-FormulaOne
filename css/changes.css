@@ -1,0 +1,181 @@
+main {
+      padding-top: 80px;
+      background-color: #000;
+      min-height: 100vh;
+}
+
+.changes-hero {
+      height: 50vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/changes_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-bottom: 3px solid #e10600;
+      margin-bottom: 50px;
+}
+
+.hero-content h1 {
+      font-family: 'Racing Sans One', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+}
+
+.hero-content p {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      letter-spacing: 2px;
+      padding: 0 20px;
+}
+
+.tech-evolution,
+.format-changes,
+.sustainability-section,
+.future-2026 {
+      padding: 80px 5vw;
+      background-color: #000;
+}
+
+.safety-section {
+      padding: 80px 5vw;
+      background-color: #0a0a0a;
+      /* O nuanță foarte subtilă de gri pentru separare */
+}
+
+.changes-grid,
+.format-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+}
+
+.change-card,
+.format-card {
+      background: #15151e;
+      padding: 40px;
+      border-radius: 8px;
+      position: relative;
+      border: 1px solid #222;
+      transition: 0.3s;
+      z-index: 1;
+}
+
+.change-card:hover,
+.format-card:hover {
+      border-color: #e10600;
+      transform: translateY(-5px);
+      background: #1c1c26;
+}
+
+.card-icon {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: rgba(225, 6, 0, 0.15);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-weight: 900;
+      z-index: -1;
+}
+
+h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+}
+
+p {
+      color: #ccc;
+      line-height: 1.6;
+}
+
+.safety-container {
+      max-width: 900px;
+      margin: 0 auto;
+}
+
+.safety-item {
+      background: #15151e;
+      margin-bottom: 25px;
+      padding: 35px;
+      border-left: 5px solid #e10600;
+      border-radius: 0 8px 8px 0;
+      border: 1px solid #222;
+      border-left-width: 5px;
+}
+
+.safety-text h3 {
+      font-family: 'Racing Sans One', sans-serif;
+      color: #fff;
+      font-size: 1.8rem;
+}
+
+.future-box {
+      background: #15151e;
+      padding: 50px;
+      max-width: 800px;
+      text-align: center;
+      border: 1px solid #e10600;
+      position: relative;
+      border-radius: 10px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(225, 6, 0, 0.1);
+}
+
+.future-box span {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      letter-spacing: 5px;
+      font-weight: bold;
+}
+
+.future-box h2 {
+      font-family: 'Racing Sans One', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      margin: 20px 0;
+}
+
+.glow-line {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      height: 2px;
+      background: #e10600;
+      box-shadow: 0 0 15px #e10600;
+}
+
+.section-title {
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 50px;
+      font-size: 2rem;
+}
+
+.reveal {
+      opacity: 0.1;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+      .hero-content h1 {
+            font-size: 2.5rem;
+      }
+}

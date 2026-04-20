@@ -1,30 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Formula One</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schimbări - Formula 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/changes.css" />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
     <header>
-        <nav>
-            <div>
-                <img src="../img/logo.png" class="logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="changes.html">Changes</a></li>
-                <li><a href="tracks.html">Tracks</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="champions.html">Champions</a></li>
-            </ul>
-            <div class="line-extend"></div>
-            <form action="/search" method="GET" class="search-form">
-                <input type="search" name="q" placeholder="Search..." class="search-input">
-                <button type="submit" class="search-button">Search</button>
-            </form>
-        </nav>
+      <nav>
+        <div>
+          <img src="../img/logo.png" class="logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Acasă</a></li>
+          <li><a href="history.html">Istorie</a></li>
+          <li><a href="changes.html">Schimbări</a></li>
+          <li><a href="tracks.html">Circuite</a></li>
+          <li><a href="teams.html">Echipe</a></li>
+          <li><a href="champions.html">Campioni</a></li>
+        </ul>
+        <div class="line-extend"></div>
+        <form action="/search" method="GET" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Caută..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="changes-hero">
+        <div class="hero-content fade-in">
+          <h1>Ingineria Limitelor</h1>
+          <p>
+            Cum s-a transformat designul mașinilor pentru a permite viteze
+            incredibile și siguranță maximă.
+          </p>
+        </div>
+      </section>
+
+      <section class="tech-evolution">
+        <h2 class="section-title reveal">Revoluția Aerodinamică</h2>
+        <div class="changes-grid">
+          <div class="change-card reveal">
+            <div class="card-icon">01</div>
+            <h3>Efectul de Sol (2022)</h3>
+            <p>
+              Reintroducerea canalelor Venturi sub mașină pentru a genera
+              apăsare aerodinamică fără a crea "aer murdar", permițând mașinilor
+              să ruleze mult mai aproape una de cealaltă.
+            </p>
+          </div>
+          <div class="change-card reveal">
+            <div class="card-icon">02</div>
+            <h3>Unitățile Hibride</h3>
+            <p>
+              Trecerea la motoarele V6 de 1.6 litri cu sisteme complexe de
+              recuperare a energiei (ERS), transformând F1 în cel mai eficient
+              laborator tehnologic din lume.
+            </p>
+          </div>
+          <div class="change-card reveal">
+            <div class="card-icon">03</div>
+            <h3>Anvelopele de 18 Inch</h3>
+            <p>
+              Trecerea de la jantele de 13 inch la cele de 18 inch în 2022 a
+              schimbat radical modul în care mașinile absorb denivelările și cum
+              se comportă pneurile în viraje.
+            </p>
+          </div>
+          <div class="change-card reveal">
+            <div class="card-icon">04</div>
+            <h3>Sistemul DRS (2011)</h3>
+            <p>
+              Drag Reduction System permite deschiderea aripii spate pentru a
+              reduce rezistența la înaintare, facilitând depășirile pe liniile
+              drepte atunci când un pilot este la mai puțin de o secundă de
+              mașina din față.
+            </p>
+          </div>
+
+          <div class="change-card reveal">
+            <div class="card-icon">05</div>
+            <h3>Plafonul Bugetar (2021)</h3>
+            <p>
+              Pentru a echilibra competiția, F1 a introdus o limită strictă de
+              cheltuieli (aprox. 135 milioane USD), împiedicând echipele mari să
+              cheltuiască sume nelimitate pentru dezvoltare.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="safety-section">
+        <h2 class="section-title reveal">Standarde de Siguranță</h2>
+        <div class="safety-container">
+          <div class="safety-item reveal">
+            <div class="safety-text">
+              <h3>Sistemul HALO</h3>
+              <p>
+                Introdus în 2018, acest cadru de titan poate susține greutatea
+                unui autobuz etajat și a salvat numeroase vieți în accidente
+                care ar fi fost fatale în trecut.
+              </p>
+            </div>
+          </div>
+          <div class="safety-item reveal">
+            <div class="safety-text">
+              <h3>Celula de Supraviețuire</h3>
+              <p>
+                Construită din fibră de carbon ultra-rezistentă, aceasta
+                protejează pilotul în cazul celor mai violente impacturi, fiind
+                practic indestructibilă.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="format-changes">
+        <h2 class="section-title reveal">Schimbări de Format</h2>
+        <div class="format-container">
+          <div class="format-card reveal">
+            <h3>Cursele Sprint</h3>
+            <p>
+              Introduse în 2021, acestea sunt curse scurte de 100km desfășurate
+              sâmbăta, care oferă puncte suplimentare primilor 8 clasați și aduc
+              mai multă acțiune pentru fani pe parcursul întregului weekend.
+            </p>
+          </div>
+          <div class="format-card reveal">
+            <h3>Parc Fermé</h3>
+            <p>
+              Regulile stricte care interzic echipelor să mai modifice setările
+              mașinii după începerea calificărilor, forțând inginerii să
+              găsească compromisul perfect între viteză și fiabilitate încă de
+              vineri.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="safety-item reveal">
+        <div class="safety-text">
+          <h3>Dispozitivul HANS</h3>
+          <p>
+            Head and Neck Support este obligatoriu din 2003 și previne
+            fracturile bazei craniului în cazul decelerărilor violente, fixând
+            casca pilotului de umeri.
+          </p>
+        </div>
+      </div>
+
+      <section class="future-2026 reveal">
+        <div class="future-box">
+          <span>VIITORUL</span>
+          <h2>Regulamentul 2026</h2>
+          <p>
+            Următoarea mare schimbare: Combustibili 100% sustenabili, putere
+            electrică triplată și aerodinamică activă pentru o sustenabilitate
+            crescută.
+          </p>
+          <div class="glow-line"></div>
+        </div>
+      </section>
+
+      <section class="sustainability-section reveal">
+        <div class="future-box green-glow">
+          <span>MISIUNEA 2030</span>
+          <h2>Net Zero Carbon</h2>
+          <p>
+            Formula 1 s-a angajat să devină un sport cu amprentă de carbon zero
+            până în 2030. Aceasta include logistica ultra-eficientă, eliminarea
+            plasticului de unică folosință și utilizarea combustibililor
+            sintetici.
+          </p>
+          <div class="glow-line green"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Proiect realizat de Tenea Andreea. Toate drepturile
+          rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
