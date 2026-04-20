@@ -1,30 +1,412 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Formula One</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circuite - Formula 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/tracks.css" />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
     <header>
-        <nav>
-            <div>
-                <img src="../img/logo.png" class="logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="changes.html">Changes</a></li>
-                <li><a href="tracks.html">Tracks</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="champions.html">Champions</a></li>
-            </ul>
-            <div class="line-extend"></div>
-            <form action="/search" method="GET" class="search-form">
-                <input type="search" name="q" placeholder="Search..." class="search-input">
-                <button type="submit" class="search-button">Search</button>
-            </form>
-        </nav>
+      <nav>
+        <div><img src="../img/logo.png" class="logo" /></div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Acasă</a></li>
+          <li><a href="history.html">Istorie</a></li>
+          <li><a href="changes.html">Schimbări</a></li>
+          <li><a href="tracks.html">Circuite</a></li>
+          <li><a href="teams.html">Echipe</a></li>
+          <li><a href="champions.html">Campioni</a></li>
+        </ul>
+        <div class="line-extend"></div>
+        <form action="/search" method="GET" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Caută..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="tracks-hero">
+        <div class="hero-content fade-in">
+          <h1>Templul Vitezei</h1>
+          <p>
+            Descoperă cele mai provocatoare și legendare circuite din calendarul
+            Formulei 1.
+          </p>
+        </div>
+      </section>
+
+      <section class="tracks-section">
+        <h2 class="section-title reveal">Circuite Legendare</h2>
+        <div class="tracks-grid">
+          <!-- 1. Spa-Francorchamps -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="background-image: url(&quot;../img/spa.png&quot;)"
+                >
+                  <div class="track-tag">BELGIA</div>
+                </div>
+                <div class="track-content">
+                  <h3>Spa-Francorchamps</h3>
+                  <p>
+                    Cel mai lung circuit din calendar și un favorit absolut al
+                    piloților datorită complexității sale.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>7.004 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>20</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>2</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1950</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Virajul Eau Rouge implică o forță laterală de peste
+                  4G.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Monaco -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="background-image: url(&quot;../img/monaco.jpg&quot;)"
+                >
+                  <div class="track-tag">MONACO</div>
+                </div>
+                <div class="track-content">
+                  <h3>Circuit de Monaco</h3>
+                  <p>
+                    Bijuteria coroanei. Un circuit stradal îngust unde precizia
+                    este mai importantă decât viteza pură.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>3.337 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>19</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>1</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1950</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Este circuitul cu cea mai mică viteză medie din sezon.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Monza -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="background-image: url(&quot;../img/monza.jpg&quot;)"
+                >
+                  <div class="track-tag">ITALIA</div>
+                </div>
+                <div class="track-content">
+                  <h3>Autodromo Monza</h3>
+                  <p>
+                    Casa Tifosi-lor. Viteze maxime incredibile și o atmosferă
+                    electrică în inima Italiei.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>5.793 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>11</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>2</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1950</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Piloții rulează cu accelerația la maximum 80% din tur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Silverstone -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="
+                    background-image: url(&quot;../img/silverstone.jpg&quot;);
+                  "
+                >
+                  <div class="track-tag">MAREA BRITANIE</div>
+                </div>
+                <div class="track-content">
+                  <h3>Silverstone</h3>
+                  <p>
+                    Locul unde a început totul. Un circuit ultra-rapid cu viraje
+                    legendare precum Copse și Stowe.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>5.891 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>18</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>2</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1950</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: A găzduit prima cursă din istoria campionatului
+                  mondial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Suzuka -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="background-image: url(&quot;../img/suzuka.jpg&quot;)"
+                >
+                  <div class="track-tag">JAPONIA</div>
+                </div>
+                <div class="track-content">
+                  <h3>Suzuka Circuit</h3>
+                  <p>
+                    Singurul circuit în formă de "8". Celebru pentru virajele
+                    sale tehnice în "S" și curba rapidă 130R.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>5.807 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>18</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>1</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1987</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Este considerat unul dintre cele mai dificile circuite
+                  din lume.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Interlagos -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="
+                    background-image: url(&quot;../img/interlagos.jpg&quot;);
+                  "
+                >
+                  <div class="track-tag">BRAZILIA</div>
+                </div>
+                <div class="track-content">
+                  <h3>Interlagos</h3>
+                  <p>
+                    Un circuit scurt și intens, faimos pentru atmosfera
+                    electrică și finalurile dramatice de sezon.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>4.309 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>15</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>2</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1973</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Se rulează în sens invers acelor de ceasornic,
+                  solicitând gâtul piloților.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Zandvoort -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="
+                    background-image: url(&quot;../img/zandvoort.jpg&quot;);
+                  "
+                >
+                  <div class="track-tag">OLANDA</div>
+                </div>
+                <div class="track-content">
+                  <h3>Circuit Zandvoort</h3>
+                  <p>
+                    Un circuit "old school" printre dune, faimos pentru virajele
+                    sale spectaculoase înclinate (banking).
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>4.259 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>14</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>2</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1952</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Virajele înclinate au o pantă de până la 18 grade.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Imola -->
+          <div class="track-card reveal">
+            <div class="track-card-inner">
+              <div class="track-card-front">
+                <div
+                  class="track-image"
+                  style="background-image: url(&quot;../img/imola.jpg&quot;)"
+                >
+                  <div class="track-tag">ITALIA</div>
+                </div>
+                <div class="track-content">
+                  <h3>Autodromo Imola</h3>
+                  <p>
+                    Un circuit istoric, rapid și plin de emoție, situat în inima
+                    regiunii Emilia-Romagna.
+                  </p>
+                  <div class="flip-hint">Vezi detalii tehnice →</div>
+                </div>
+              </div>
+              <div class="track-card-back">
+                <h3>Detalii Tehnice</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Lungime:</span> <strong>4.909 km</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Viraje:</span> <strong>19</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Zone DRS:</span> <strong>1</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Primul GP:</span> <strong>1980</strong>
+                  </div>
+                </div>
+                <p class="trivia">
+                  Trivia: Circuitul poartă numele fondatorului Ferrari și al
+                  fiului său, Dino.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Proiect realizat de Tenea Andreea. Toate drepturile
+          rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

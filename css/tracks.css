@@ -1,0 +1,197 @@
+main {
+    padding-top: 80px;
+    background-color: #000;
+    min-height: 100vh;
+}
+
+.tracks-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/tracks_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid #e10600;
+}
+
+.hero-content h1 {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-family: 'Orbitron', sans-serif;
+    color: #e10600;
+    letter-spacing: 2px;
+}
+
+.tracks-section {
+    padding: 80px 5vw;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+}
+
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.track-card {
+    background-color: transparent;
+    height: 480px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.track-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.track-card:hover .track-card-inner {
+    transform: rotateY(180deg);
+}
+
+.track-card-front,
+.track-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border: 1px solid #222;
+    overflow: hidden;
+}
+
+.track-card-front {
+    background: #15151e;
+}
+
+.track-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.track-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #e10600;
+    color: white;
+    padding: 5px 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.track-content {
+    padding: 25px;
+}
+
+.track-content h3 {
+    font-family: 'Racing Sans One', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.track-content p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.flip-hint {
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: #e10600;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+.track-card-back {
+    background: linear-gradient(145deg, #1a1a1a 0%, #000 100%);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #e10600;
+}
+
+.track-card-back h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #e10600;
+    margin-bottom: 30px;
+}
+
+.stats-list {
+    text-align: left;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+}
+
+.stat-item strong {
+    color: #e10600;
+}
+
+.trivia {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.reveal {
+    opacity: 0.1;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
