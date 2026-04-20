@@ -1,0 +1,201 @@
+.history-hero {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/history_bg.jpg');
+      background-size: cover;
+      background-position: center;
+}
+
+.history-hero h1 {
+      font-family: 'Racing Sans One', sans-serif;
+      font-size: 4rem;
+      color: #e10600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+}
+
+.history-hero p {
+      font-family: 'Orbitron', sans-serif;
+      color: #d8d8d8;
+      letter-spacing: 2px;
+}
+
+/* Timeline Design */
+.timeline-section {
+      padding: 100px 5vw;
+      background: #0b0b0b;
+}
+
+.timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+}
+
+.timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: #333;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+}
+
+.timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+}
+
+.timeline-content {
+      padding: 20px 30px;
+      background: #15151e;
+      border-radius: 6px;
+      border-bottom: 3px solid #e10600;
+}
+
+.timeline-content h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      margin-bottom: 10px;
+}
+
+.timeline-content p {
+      color: #999;
+      line-height: 1.6;
+}
+
+/* Legends Section */
+.legends-section {
+      padding: 100px 5vw;
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+.legends-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+}
+
+.legend-card {
+      background: linear-gradient(145deg, #15151e 0%, #0a0a0f 100%);
+      border: 1px solid #222;
+      padding: 40px 30px;
+      border-radius: 4px;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      text-align: center;
+}
+
+.legend-card:hover {
+      transform: translateY(-15px);
+      border-color: #e10600;
+      box-shadow: 0 20px 40px rgba(225, 6, 0, 0.15);
+}
+
+.legend-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent 0%, rgba(225, 6, 0, 0.05) 100%);
+      opacity: 0;
+      transition: 0.4s;
+}
+
+.legend-card:hover::before {
+      opacity: 1;
+}
+
+.legend-badge {
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: #e10600;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.7rem;
+      font-weight: bold;
+      padding: 5px 40px;
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px rgba(225, 6, 0, 0.5);
+}
+
+.legend-info h3 {
+      font-family: 'Racing Sans One', sans-serif;
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+}
+
+.legend-info .nickname {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+}
+
+.legend-info .desc {
+      color: #888;
+      line-height: 1.6;
+      font-size: 0.95rem;
+}
+
+.reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+      .timeline::after {
+            left: 31px;
+      }
+
+      .timeline-item {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+      }
+
+      .timeline-item:nth-child(even) {
+            left: 0%;
+      }
+
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+            text-align: left;
+      }
+
+      .timeline-item::after {
+            left: 21px;
+      }
+}

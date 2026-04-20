@@ -1,30 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Formula One</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Istorie - Formula 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
     <header>
-        <nav>
-            <div>
-                <img src="../img/logo.png" class="logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="changes.html">Changes</a></li>
-                <li><a href="tracks.html">Tracks</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="champions.html">Champions</a></li>
-            </ul>
-            <div class="line-extend"></div>
-            <form action="/search" method="GET" class="search-form">
-                <input type="search" name="q" placeholder="Search..." class="search-input">
-                <button type="submit" class="search-button">Search</button>
-            </form>
-        </nav>
+      <nav>
+        <div>
+          <img src="../img/logo.png" class="logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Acasă</a></li>
+          <li><a href="history.html">Istorie</a></li>
+          <li><a href="changes.html">Schimbări</a></li>
+          <li><a href="tracks.html">Circuite</a></li>
+          <li><a href="teams.html">Echipe</a></li>
+          <li><a href="champions.html">Campioni</a></li>
+        </ul>
+        <div class="line-extend"></div>
+        <form action="/search" method="GET" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Caută..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="history-hero">
+        <h1 class="fade-in">Evoluția Vitezei</h1>
+        <p class="fade-in">
+          De la circuitele de pământ la tehnologia hibridă de astăzi.
+        </p>
+      </section>
+
+      <section class="timeline-section">
+        <h2 class="section-title reveal">Cronologia F1</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>1950 - Începutul</h3>
+              <p>
+                Primul Mare Premiu oficial a avut loc la Silverstone. Giuseppe
+                Farina a devenit primul campion mondial la volanul unui Alfa
+                Romeo.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>1960 - Revoluția Motorului</h3>
+              <p>
+                Echipele au început să mute motorul în spatele pilotului, o
+                schimbare radicală condusă de Cooper, care a redefinit
+                manevrabilitatea.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>1980 - Era Turbo</h3>
+              <p>
+                Motoarele turbo au început să domine, producând peste 1000 CP. A
+                fost decada marcată de rivalitatea legendară dintre Senna și
+                Prost.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>2000 - Dominarea Schumacher</h3>
+              <p>
+                Michael Schumacher și Ferrari au rescris cărțile de recorduri,
+                câștigând 5 titluri consecutive într-o eră de precizie tehnică
+                absolută.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>2014 - Era Hibridă</h3>
+              <p>
+                Introducerea motoarelor V6 Turbo-Hibrid a pus accentul pe
+                eficiență și recuperarea energiei, Mercedes începând o perioadă
+                record de victorii.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>1970 - Era Efectului de Sol</h3>
+              <p>
+                Colin Chapman și echipa Lotus au introdus aerodinamica
+                revoluționară care "lipea" mașina de pistă. A fost o decadă a
+                inovațiilor radicale și a piloților carismatici precum Niki
+                Lauda și James Hunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>1990 - Revoluția Electronică</h3>
+              <p>
+                Mașinile au devenit ultra-tehnologizate cu suspensii active și
+                controlul tracțiunii. După tragicul an 1994, siguranța a devenit
+                prioritatea absolută, transformând radical designul circuitelor
+                și al mașinilor.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <h3>2022 - Revenirea la Efectul de Sol</h3>
+              <p>
+                F1 a introdus un nou regulament tehnic major pentru a permite
+                depășiri mai ușoare. Această eră este marcată de dominația
+                incredibilă a lui Max Verstappen, care a stabilit noi recorduri
+                de victorii consecutive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="legends-section">
+        <h2 class="section-title reveal">Legendele Nemuritoare</h2>
+        
+        <div class="legends-grid">
+          <!-- Juan Manuel Fangio -->
+          <div class="legend-card reveal">
+            <div class="legend-badge">5 TITLURI</div>
+            <div class="legend-info">
+              <h3>Juan Manuel Fangio</h3>
+              <p class="nickname">"El Maestro"</p>
+              <p class="desc">
+                A dominat prima decadă a F1, câștigând cu 4 echipe diferite
+                (Alfa Romeo, Maserati, Mercedes, Ferrari).
+              </p>
+            </div>
+          </div>
+
+          <!-- Niki Lauda -->
+          <div class="legend-card reveal">
+            <div class="legend-badge">3 TITLURI</div>
+            <div class="legend-info">
+              <h3>Niki Lauda</h3>
+              <p class="nickname">"The Computer"</p>
+              <p class="desc">
+                Simbolul rezilienței absolute, revenind la curse la doar 6
+                săptămâni după un accident aproape fatal în 1976.
+              </p>
+            </div>
+          </div>
+
+          <!-- Alain Prost -->
+          <div class="legend-card reveal">
+            <div class="legend-badge">4 TITLURI</div>
+            <div class="legend-info">
+              <h3>Alain Prost</h3>
+              <p class="nickname">"Profesorul"</p>
+              <p class="desc">
+                Cunoscut pentru stilul său calculat și strategic, a purtat
+                bătălii epice care au definit istoria sportului.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ayrton Senna -->
+          <div class="legend-card reveal">
+            <div class="legend-badge">3 TITLURI</div>
+            <div class="legend-info">
+              <h3>Ayrton Senna</h3>
+              <p class="nickname">"Magic Senna"</p>
+              <p class="desc">
+                Un geniu al vitezei pure, a dus pilotajul la rang de artă,
+                rămânând cel mai iubit pilot din istorie.
+              </p>
+            </div>
+          </div>
+
+          <!-- Michael Schumacher -->
+          <div class="legend-card reveal">
+            <div class="legend-badge">7 TITLURI</div>
+            <div class="legend-info">
+              <h3>Michael Schumacher</h3>
+              <p class="nickname">"The Kaiser"</p>
+              <p class="desc">
+                Omul care a transformat Ferrari într-o forță imbatabilă,
+                deținând recorduri care au părut imposibil de atins.
+              </p>
+            </div>
+          </div>
+
+          <!-- Lewis Hamilton -->
+          <div class="legend-card reveal">
+            <div class="legend-badge">7 TITLURI</div>
+            <div class="legend-info">
+              <h3>Lewis Hamilton</h3>
+              <p class="nickname">"Sir Lewis"</p>
+              <p class="desc">
+                Cel mai de succes pilot în termeni de victorii și pole-uri,
+                continuând să scrie istorie și în era modernă.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Proiect realizat de Tenea Andreea. Toate drepturile
+          rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
