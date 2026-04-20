@@ -7,7 +7,10 @@
 }
 
 body {
+      background-image: radial-gradient(circle, #262626 1px, transparent 1px);
+      background-size: 30px 30px;
       background-color: black;
+      scroll-behavior: smooth;
 }
 
 /* Header and Nav */
@@ -95,4 +98,128 @@ nav {
 
 .search-button:hover {
       background: #c10500;
+}
+
+/* Progress Bar */
+#scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5px;
+      background: #e10600;
+      /* Roșu F1 */
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+}
+
+/* Personalized Scrollbar */
+::-webkit-scrollbar {
+      width: 8px;
+}
+
+::-webkit-scrollbar-track {
+      background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+      background: #e10600;
+      border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background: #ff1e1e;
+}
+
+/* Footer Styling */
+footer {
+      background: #050505;
+      border-top: 1px solid #333;
+      padding: 50px 5vw 20px;
+      padding-top: 80px;
+      font-family: 'Orbitron', sans-serif;
+}
+
+.footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+}
+
+.footer-logo {
+      display: flex;
+      align-items: center;
+      letter-spacing: 2px;
+}
+
+.footer-logo img {
+      height: 30px;
+}
+
+.footer-logo span {
+      color: white;
+      font-family: 'Racing Sans One', sans-serif;
+      font-size: 1.5rem;
+}
+
+.footer-links h4,
+.footer-social h4 {
+      color: #e10600;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+}
+
+.footer-links ul {
+      list-style: none;
+}
+
+.footer-links li {
+      margin-bottom: 10px;
+}
+
+.footer-links a {
+      color: #999;
+      text-decoration: none;
+      transition: color 0.3s;
+}
+
+.footer-links a:hover {
+      color: white;
+}
+
+.social-icons {
+      display: flex;
+      gap: 15px;
+}
+
+.social-icons a {
+      color: #666;
+      text-decoration: none;
+      border: 1px solid #333;
+      border-color: #222;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background 0.3s;
+}
+
+.social-icons a:hover {
+      background: #e10600;
+      border-color: #e10600;
+}
+
+.footer-bottom {
+      background: #000;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 1px solid #15151e;
+      padding-top: 20px;
+      color: #666;
+      font-size: 0.8rem;
 }
