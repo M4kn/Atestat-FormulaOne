@@ -1,30 +1,408 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Formula One</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echipe 2026 - Formula 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/teams.css" />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
     <header>
-        <nav>
-            <div>
-                <img src="../img/logo.png" class="logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="changes.html">Changes</a></li>
-                <li><a href="tracks.html">Tracks</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="champions.html">Champions</a></li>
-            </ul>
-            <div class="line-extend"></div>
-            <form action="/search" method="GET" class="search-form">
-                <input type="search" name="q" placeholder="Search..." class="search-input">
-                <button type="submit" class="search-button">Search</button>
-            </form>
-        </nav>
+      <nav>
+        <div><img src="../img/logo.png" class="logo" /></div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Acasă</a></li>
+          <li><a href="history.html">Istorie</a></li>
+          <li><a href="changes.html">Schimbări</a></li>
+          <li><a href="tracks.html">Circuite</a></li>
+          <li><a href="teams.html">Echipe</a></li>
+          <li><a href="champions.html">Campioni</a></li>
+        </ul>
+        <div class="line-extend"></div>
+        <form action="/search" method="GET" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Caută..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="teams-hero">
+        <div class="hero-content fade-in">
+          <h1>Grila Oficială 2026</h1>
+          <p>
+            O nouă eră tehnologică. 11 echipe, un singur obiectiv: Gloria
+            Mondială.
+          </p>
+        </div>
+      </section>
+
+      <section class="teams-section">
+        <div class="teams-grid">
+          <!-- 1. Red Bull Racing -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front redbull-border">
+                <div class="team-logo-container">
+                  <img src="../img/teams/redbull.svg" alt="Red Bull" />
+                </div>
+                <h3>Oracle Red Bull Racing</h3>
+                <p>Motor: Ford Powertrains</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Verstappen / ?</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Milton Keynes, UK</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>7</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Ferrari -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front ferrari-border">
+                <div class="team-logo-container">
+                  <img src="../img/teams/ferrari.svg" alt="Ferrari" />
+                </div>
+                <h3>Scuderia Ferrari HP</h3>
+                <p>Motor: Ferrari</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Hamilton / Leclerc</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Maranello, Italia</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>16</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Mercedes -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front mercedes-border">
+                <div class="team-logo-container">
+                  <a
+                    title="vectorize.net, Public domain, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Mercedes_AMG_Petronas_F1_Logo.svg"
+                    ><img
+                      width="960"
+                      alt="mercedes////AMG"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/960px-Mercedes_AMG_Petronas_F1_Logo.svg.png"
+                  /></a>
+                </div>
+                <h3>Mercedes-AMG Petronas</h3>
+                <p>Motor: Mercedes</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Russell / Antonelli</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Brackley, UK</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>8</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. McLaren -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front mclaren-border">
+                <div class="team-logo-container">
+                  <img src="../img/teams/mclaren.svg" alt="McLaren" />
+                </div>
+                <h3>McLaren F1 Team</h3>
+                <p>Motor: Mercedes</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Norris / Piastri</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Woking, UK</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>8</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Audi (New Entry) -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front audi-border">
+                <div class="team-logo-container">
+                  <img src="../img/teams/audi.svg" alt="Audi" />
+                </div>
+                <h3>Audi F1 Team</h3>
+                <p>Motor: Audi</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Hülkenberg / ?</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Neuburg, Germania</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Debut:</span> <strong>2026</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Aston Martin -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front aston-border">
+                <div class="team-logo-container">
+                  <img src="../img/teams/aston.svg" alt="Aston Martin" />
+                </div>
+                <h3>Aston Martin Aramco</h3>
+                <p>Motor: Honda</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Alonso / Stroll</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Silverstone, UK</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>0</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Williams -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front williams-border">
+                <div class="team-logo-container">
+                  <a
+                    title="Atlassian Williams F1 Team, Public domain, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Atlassian_Williams_F1_Team_logo.svg"
+                    ><img
+                      width="960"
+                      alt="Atlassian Williams F1 Team logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Atlassian_Williams_F1_Team_logo.svg/960px-Atlassian_Williams_F1_Team_logo.svg.png"
+                  /></a>
+                </div>
+                <h3>Williams Racing</h3>
+                <p>Motor: Mercedes</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Albon / Sainz</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Grove, UK</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>9</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Alpine -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front alpine-border">
+                <div class="team-logo-container">
+                  <a
+                    title="Alpine F1 Team, Public domain, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Alpine_F1_Team_Logo.svg"
+                    ><img
+                      width="960"
+                      alt="Alpine F1 Team Logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Alpine_F1_Team_Logo.svg/960px-Alpine_F1_Team_Logo.svg.png"
+                  /></a>
+                </div>
+                <h3>BWT Alpine F1 Team</h3>
+                <p>Motor: Renault</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Gasly / ?</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Enstone, UK</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>2</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. RB -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front rb-border">
+                <div class="team-logo-container">
+                  <img src="../img/teams/rb.svg" alt="RB" />
+                </div>
+                <h3>Visa Cash App RB</h3>
+                <p>Motor: Ford Powertrains</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Tsunoda / ?</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Faenza, Italia</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>0</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Haas -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front haas-border">
+                <div class="team-logo-container">
+                  <a
+                    title="Haas F1 Team, Public domain, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Haas_F1_Team_Logo.svg"
+                    ><img
+                      width="960"
+                      alt="Haas F1 Team Logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Haas_F1_Team_Logo.svg/960px-Haas_F1_Team_Logo.svg.png"
+                  /></a>
+                </div>
+                <h3>MoneyGram Haas F1</h3>
+                <p>Motor: Ferrari</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>Bearman / Ocon</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Kannapolis, USA</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Titluri:</span> <strong>0</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Cadillac (New Entry) -->
+          <div class="team-card reveal">
+            <div class="team-card-inner">
+              <div class="team-card-front cadillac-border">
+                <div class="team-logo-container">
+                  <a
+                    title="Cadillac, Public domain, via Wikimedia Commons"
+                    href="https://commons.wikimedia.org/wiki/File:Cadillac_Logo_2021.svg"
+                    ><img
+                      width="960"
+                      alt="Logo of the American company Cadillac, first launched in 2021"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cadillac_Logo_2021.svg/960px-Cadillac_Logo_2021.svg.png"
+                  /></a>
+                </div>
+                <h3>Cadillac F1 Team</h3>
+                <p>Motor: Cadillac / GM</p>
+                <div class="flip-hint">Detalii Piloți →</div>
+              </div>
+              <div class="team-card-back">
+                <h3>Statistici 2026</h3>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span>Piloți:</span> <strong>?</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Sediu:</span> <strong>Fishers, Indiana, USA</strong>
+                  </div>
+                  <div class="stat-item">
+                    <span>Debut:</span> <strong>2026</strong>
+                  </div>
+                </div>
+                <p class="team-motto">"American Excellence"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Proiect realizat de Tenea Andreea. Toate drepturile
+          rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+main {
+      padding-top: 80px;
+      background-color: #000;
+      min-height: 100vh;
+}
+
+.teams-hero {
+      height: 50vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('../img/teams_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-bottom: 3px solid #e10600;
+}
+
+.hero-content h1 {
+      font-family: 'Racing Sans One', sans-serif;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      color: #fff;
+      text-transform: uppercase;
+}
+
+.hero-content p {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      letter-spacing: 2px;
+}
+
+.teams-section {
+      padding: 80px 5vw;
+}
+
+.section-title {
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 60px;
+      font-size: 2.2rem;
+}
+
+.teams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+}
+
+.team-card {
+      background-color: transparent;
+      height: 450px;
+      perspective: 1000px;
+      cursor: pointer;
+}
+
+.team-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+}
+
+.team-card:hover .team-card-inner {
+      transform: rotateY(180deg);
+}
+
+.team-card-front,
+.team-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      border: 1px solid #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+}
+
+.team-card-front {
+      background: #21212c;
+}
+
+.team-logo-container {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+}
+
+.team-logo-container img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+}
+
+.team-card-front h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      text-align: center;
+}
+
+.team-card-front p {
+      color: #e10600;
+      font-family: 'Racing Sans One', sans-serif;
+      letter-spacing: 1px;
+}
+
+.redbull-border {
+      border-bottom: 4px solid #0600ef;
+}
+
+.ferrari-border {
+      border-bottom: 4px solid #ef1a2d;
+}
+
+.mercedes-border {
+      border-bottom: 4px solid #00d2be;
+}
+
+.mclaren-border {
+      border-bottom: 4px solid #ff8700;
+}
+
+.audi-border {
+      border-bottom: 4px solid #f50537;
+}
+
+.aston-border {
+      border-bottom: 4px solid #006f62;
+}
+
+.williams-border {
+      border-bottom: 4px solid #005aff;
+}
+
+.alpine-border {
+      border-bottom: 4px solid #0090ff;
+}
+
+.rb-border {
+      border-bottom: 4px solid #6692ff;
+}
+
+.haas-border {
+      border-bottom: 4px solid #ffffff;
+}
+
+.cadillac-border {
+      border-bottom: 4px solid #c3a343;
+}
+
+.team-card-back {
+      background: linear-gradient(145deg, #1a1a1a 0%, #000 100%);
+      color: white;
+      transform: rotateY(180deg);
+      border: 1px solid #e10600;
+}
+
+.team-card-back h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #e10600;
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+}
+
+.stats-list {
+      width: 100%;
+      text-align: left;
+}
+
+.stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #222;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.8rem;
+}
+
+.stat-item strong {
+      color: #fff;
+}
+
+.team-motto {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #666;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+
+.flip-hint {
+      margin-top: 25px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.7rem;
+      color: #444;
+      text-transform: uppercase;
+}
+
+.reveal {
+      opacity: 0.1;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+}
