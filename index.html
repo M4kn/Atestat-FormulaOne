@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Formula One</title>
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
+    <header>
+      <nav>
+        <div>
+          <img src="img/logo.png" class="logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="html/history.html">Istorie</a></li>
+          <li><a href="html/changes.html">Schimbări</a></li>
+          <li><a href="html/tracks.html">Circuite</a></li>
+          <li><a href="html/teams.html">Echipe</a></li>
+          <li><a href="html/champions.html">Campioni</a></li>
+        </ul>
+        <div class="line-extend"></div>
+        <form action="/search" method="GET" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Caută..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video src="img/hero.mp4" autoplay muted loop></video>
+        <div class="title">
+          <div class="title-text fade-out">Bine ați venit la</div>
+          <div class="title-text fade-in">
+            <img src="img/f_logo_1.png" alt="F" class="f_logo" />
+            <div class="name">ormula 1</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="countdown-section">
+        <div id="countdown-container">
+          <h2>Următorul Mare Premiu în:</h2>
+          <div id="timer">
+            <div class="time-unit">
+              <span id="days">00</span>
+              <p>Zile</p>
+            </div>
+            <div class="time-unit">
+              <span id="hours">00</span>
+              <p>Ore</p>
+            </div>
+            <div class="time-unit">
+              <span id="minutes">00</span>
+              <p>Min</p>
+            </div>
+            <div class="time-unit">
+              <span id="seconds">00</span>
+              <p>Sec</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule-section">
+        <h2 class="section-title">Calendarul Sezonului</h2>
+        <div class="schedule-container">
+          <div class="race-item current">
+            <span class="race-date">01 - 03 MAI</span>
+            <div class="race-info">
+              <h4>Miami Grand Prix</h4>
+              <p>Miami International Autodrome, Miami</p>
+            </div>
+            <div class="race-status">Urmează</div>
+          </div>
+          <div class="race-item">
+            <span class="race-date">22 - 24 MAI</span>
+            <div class="race-info">
+              <h4>Canadian Grand Prix</h4>
+              <p>Circuit Gilles Villeneuve, Montreal</p>
+            </div>
+          </div>
+          <div class="race-item">
+            <span class="race-date">5 - 7 IUNIE</span>
+            <div class="race-info">
+              <h4>Monaco Grand Prix</h4>
+              <p>Circuit de Monaco, Monte Carlo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="drivers-spotlight">
+        <h2 class="section-title">Piloți în Vizor</h2>
+        <div class="drivers-container">
+          <div class="driver-card reveal">
+            <div class="driver-number">1</div>
+            <div class="driver-info">
+              <h3>Max Verstappen</h3>
+              <p>Red Bull Racing</p>
+              <div class="stat-bar">
+                <div class="fill" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="driver-card reveal">
+            <div class="driver-number">44</div>
+            <div class="driver-info">
+              <h3>Lewis Hamilton</h3>
+              <p>Ferrari</p>
+              <div class="stat-bar">
+                <div class="fill" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="driver-card reveal">
+            <div class="driver-number">4</div>
+            <div class="driver-info">
+              <h3>Lando Norris</h3>
+              <p>McLaren</p>
+              <div class="stat-bar">
+                <div class="fill" style="width: 92%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news-section">
+        <h2 class="section-title">Ultimele Știri</h2>
+        <div class="news-grid">
+          <div class="news-card">
+            <div
+              class="news-image"
+              style="background-image: url(&quot;img/news1.jpg&quot;)"
+            ></div>
+            <div class="news-content">
+              <span class="news-tag">Rezultate</span>
+              <h3>Dominare totală în calificări</h3>
+              <p>
+                Vezi cum s-au descurcat piloții în sesiunea de astăzi pe
+                circuitul din Japonia.
+              </p>
+              <a
+                href="https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-japanese-grand-prix.6b4ys9RVRgRCcfXsQEOl1Q"
+                class="read-more"
+                >Citește mai mult</a
+              >
+            </div>
+          </div>
+          <div class="news-card">
+            <div
+              class="news-image"
+              style="background-image: url(&quot;img/news2.jpg&quot;)"
+            ></div>
+            <div class="news-content">
+              <span class="news-tag">Tehnic</span>
+              <h3>Cele mai bune inovații ale sezonului</h3>
+              <p>
+                Află ce îmbunătățiri au adus echipele de la începutul sezonului
+                după noile reglementări.
+              </p>
+              <a
+                href="https://www.formula1.com/en/latest/article/tech-talk-the-best-innovations-of-the-2026-season-so-far.13SOD6bFCyz96QGKBv7kIN"
+                class="read-more"
+                >Citește mai mult</a
+              >
+            </div>
+          </div>
+          <div class="news-card">
+            <div
+              class="news-image"
+              style="background-image: url(&quot;img/news3.png&quot;)"
+            ></div>
+            <div class="news-content">
+              <span class="news-tag">Transferuri</span>
+              <h3>Zvonuri în Paddock</h3>
+              <p>
+                Ce știm despre transferul lui Lambiase de la Red Bull la McLaren
+                și ce înseamnă pentru Verstappen.
+              </p>
+              <a
+                href="https://www.formula1.com/en/latest/article/analysis-gianpiero-lambiase-red-bull-mclaren-max-verstappen.4ri5jhgqUGtZf0xSd22sNm"
+                class="read-more"
+                >Citește mai mult</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/f_logo_1.png" alt="F1" />
+          <span>ormula 1</span>
+        </div>
+        <div class="footer-links">
+          <h4>Link-uri Rapide</h4>
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="html/teams.html">Echipe</a></li>
+            <li><a href="html/tracks.html">Circuite</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Urmărește F1</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Formula1/">FB</a>
+            <a href="https://www.instagram.com/f1/">IG</a>
+            <a href="https://x.com/F1?lang=en">X</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Proiect realizat de Tenea Andreea. Toate drepturile
+          rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
