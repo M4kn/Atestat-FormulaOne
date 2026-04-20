@@ -1,30 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Formula One</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campioni 2026 - Formula 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/champions.css" />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
     <header>
-        <nav>
-            <div>
-                <img src="../img/logo.png" class="logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="changes.html">Changes</a></li>
-                <li><a href="tracks.html">Tracks</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="champions.html">Champions</a></li>
-            </ul>
-            <div class="line-extend"></div>
-            <form action="/search" method="GET" class="search-form">
-                <input type="search" name="q" placeholder="Search..." class="search-input">
-                <button type="submit" class="search-button">Search</button>
-            </form>
-        </nav>
+      <nav>
+        <div><img src="../img/logo.png" class="logo" /></div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Acasă</a></li>
+          <li><a href="history.html">Istorie</a></li>
+          <li><a href="changes.html">Schimbări</a></li>
+          <li><a href="tracks.html">Circuite</a></li>
+          <li><a href="teams.html">Echipe</a></li>
+          <li><a href="champions.html">Campioni</a></li>
+        </ul>
+        <div class="line-extend"></div>
+        <form action="/search" method="GET" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Caută..."
+            class="search-input"
+          />
+          <button type="submit" class="search-button">Caută</button>
+        </form>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="champions-hero">
+        <div class="hero-content fade-in">
+          <h1>Legendele Grila 2026</h1>
+          <p>
+            Eroi care au definit epoci și piloții care rescriu istoria sub noul
+            regulament 2026.
+          </p>
+        </div>
+      </section>
+
+      <section class="hall-of-fame">
+        <!-- Max Verstappen -->
+        <div class="champion-row reveal">
+          <div class="champion-year">5X</div>
+          <div class="champion-info">
+            <h2>Max Verstappen</h2>
+            <p class="titles">2021, 2022, 2023, 2024, 2025</p>
+            <p class="bio">
+              Intrând în era 2026 ca deținătorul a 5 titluri consecutive,
+              Verstappen este forța absolută a prezentului, dominând sportul
+              alături de Red Bull-Ford.
+            </p>
+          </div>
+          <div class="champion-badge active">CAMPION EN-TITRE</div>
+        </div>
+
+        <!-- Lewis Hamilton -->
+        <div class="champion-row reveal reverse">
+          <div class="champion-year">7X</div>
+          <div class="champion-info">
+            <h2>Lewis Hamilton</h2>
+            <p class="titles">2008, 2014, 2015, 2017, 2018, 2019, 2020</p>
+            <p class="bio">
+              Aflat acum la Scuderia Ferrari, cel mai titrat pilot în activitate
+              caută legendarul al 8-lea titlu mondial sub noile reglementări
+              tehnice.
+            </p>
+          </div>
+          <div class="champion-badge gold">LEGENDĂ MERCEDES</div>
+        </div>
+
+        <!-- Michael Schumacher -->
+        <div class="champion-row reveal">
+          <div class="champion-year">7X</div>
+          <div class="champion-info">
+            <h2>Michael Schumacher</h2>
+            <p class="titles">1994, 1995, 2000, 2001, 2002, 2003, 2004</p>
+            <p class="bio">
+              Standardul de aur al excelenței tehnice și al determinării,
+              Michael rămâne eternul punct de referință pentru orice pilot
+              Ferrari.
+            </p>
+          </div>
+          <div class="champion-badge gold">HALL OF FAME</div>
+        </div>
+
+        <!-- Sebastian Vettel -->
+        <div class="champion-row reveal reverse">
+          <div class="champion-year">4X</div>
+          <div class="champion-info">
+            <h2>Sebastian Vettel</h2>
+            <p class="titles">2010, 2011, 2012, 2013</p>
+            <p class="bio">
+              Omul care a pus bazele dinastiei Red Bull, rămâne unul dintre cei
+              mai iubiți campioni pentru inteligența și viteza sa pură.
+            </p>
+          </div>
+          <div class="champion-badge gold">HALL OF FAME</div>
+        </div>
+      </section>
+
+      <section class="all-time-list reveal">
+        <h2 class="section-title">Ierarhia Legendelor (Update 2026)</h2>
+        <div class="stats-table-wrapper">
+          <div class="stats-table">
+            <!-- Cap de tabel -->
+            <div class="table-row head">
+              <span class="col-pilot">Pilot</span>
+              <span class="col-stat">Titluri</span>
+              <span class="col-stat">Victorii</span>
+              <span class="col-stat">Podiumuri</span>
+              <span class="col-stat">Poles</span>
+            </div>
+
+            <!-- Lewis Hamilton -->
+            <div class="table-row">
+              <span class="col-pilot">Lewis Hamilton</span>
+              <span class="col-stat">7</span>
+              <span class="col-stat">103</span>
+              <span class="col-stat">197</span>
+              <span class="col-stat">104</span>
+            </div>
+
+            <!-- Michael Schumacher -->
+            <div class="table-row">
+              <span class="col-pilot">Michael Schumacher</span>
+              <span class="col-stat">7</span>
+              <span class="col-stat">91</span>
+              <span class="col-stat">155</span>
+              <span class="col-stat">68</span>
+            </div>
+
+            <!-- Max Verstappen -->
+            <div class="table-row highlighted">
+              <span class="col-pilot">Max Verstappen</span>
+              <span class="col-stat">5</span>
+              <span class="col-stat">85*</span>
+              <span class="col-stat">125*</span>
+              <span class="col-stat">48*</span>
+            </div>
+
+            <!-- Juan Manuel Fangio -->
+            <div class="table-row">
+              <span class="col-pilot">Juan Manuel Fangio</span>
+              <span class="col-stat">5</span>
+              <span class="col-stat">24</span>
+              <span class="col-stat">35</span>
+              <span class="col-stat">29</span>
+            </div>
+
+            <!-- Alain Prost -->
+            <div class="table-row">
+              <span class="col-pilot">Alain Prost</span>
+              <span class="col-stat">4</span>
+              <span class="col-stat">51</span>
+              <span class="col-stat">106</span>
+              <span class="col-stat">33</span>
+            </div>
+
+            <!-- Sebastian Vettel -->
+            <div class="table-row">
+              <span class="col-pilot">Sebastian Vettel</span>
+              <span class="col-stat">4</span>
+              <span class="col-stat">53</span>
+              <span class="col-stat">122</span>
+              <span class="col-stat">57</span>
+            </div>
+          </div>
+        </div>
+        <p class="table-note">
+          * Statistici estimate la începutul sezonului 2026.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Proiect realizat de Tenea Andreea. Toate drepturile
+          rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
