@@ -48,7 +48,7 @@ window.onscroll = function () {
   }
 };
 
-// Funcție pentru animația de apariție la scroll (Reveal)
+// 3. Reveal on scroll
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -63,8 +63,6 @@ function reveal() {
     }
 }
 
-// Ascultăm evenimentul de scroll
 window.addEventListener("scroll", reveal);
 
-// Verificăm și la încărcare (în caz că elementele sunt deja vizibile)
 reveal();
