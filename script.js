@@ -1,5 +1,5 @@
 // 1. Countdown
-const dataEveniment = new Date("May 1, 2026 15:00:00").getTime();
+const dataEveniment = new Date("May 24, 2026 23:00:00").getTime();
 
 const countdown = setInterval(() => {
   const acum = new Date().getTime();
