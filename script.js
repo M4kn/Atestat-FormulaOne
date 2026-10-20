@@ -1,5 +1,5 @@
 // 1. Countdown
-const dataEveniment = new Date("May 24, 2026 23:00:00").getTime();
+const dataEveniment = new Date("October 25, 2026 22:00:00").getTime();
 
 const countdown = setInterval(() => {
   const acum = new Date().getTime();
@@ -50,17 +50,17 @@ window.onscroll = function () {
 
 // 3. Reveal on scroll
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+  var reveals = document.querySelectorAll(".reveal");
 
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        }
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
     }
+  }
 }
 
 window.addEventListener("scroll", reveal);
